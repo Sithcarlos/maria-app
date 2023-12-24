@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\WowController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +27,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
-Route::get('/wow', function () {
-    return view('wow/main');
-});
+Route::get('/wow', [WowController::class, 'index']);
