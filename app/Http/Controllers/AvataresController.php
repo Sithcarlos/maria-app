@@ -5,23 +5,20 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreAvataresRequest;
 use App\Http\Requests\UpdateAvataresRequest;
 use App\Models\Avatares;
-use App\Services\AvataresService;
 
 class AvataresController extends Controller
 {
-    private AvataresService $AvataresS;
-    public function __construct(AvataresService $AvataresService)
+
+    public function __construct()
     {
-        $this->AvataresS = $AvataresService;
+
     }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $razas_clases = $this->AvataresS->getRazasClases();
-        $avatares = [];
-        return view('wow/avatares', compact(['razas_clases', 'avatares']));
+
     }
 
     /**

@@ -30,4 +30,4 @@ Route::middleware([
 });
 
 Route::get('/wow', [WowController::class, 'index']);
-Route::get('/avatares', [AvataresController::class, 'index']);
+Route::get('/avatares', [WowController::class, 'avatares']);
