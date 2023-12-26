@@ -12,18 +12,11 @@
             <div class="mb-3">
                 <label for="InputX" class="form-label">Raza y clase</label>
                 <select class="form-select">
-
-
-
                     @forelse ($razas_clases as $rrcc)
-                    <option value="{{ $rrcc->raza_id }}-{{ $rrcc->clase_id }}"> {{ $rrcc->raza }} | {{
-                        $rrcc->clase }} </option>
+                    <option value="{{ $rrcc->id }}">{{ $rrcc->raza }} | {{$rrcc->clase }}</option>
                     @empty
                     <option selected>NO FUNCIONAL</option>
                     @endforelse
-
-
-
                 </select>
             </div>
             <div class="mb-3">
