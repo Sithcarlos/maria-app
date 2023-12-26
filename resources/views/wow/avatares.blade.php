@@ -10,20 +10,62 @@
         <p>Agregar nuevo avatar</p>
         <form>
             <div class="mb-3">
-                <label for="InputNombre1" class="form-label">Nombre del avatar</label>
-                <input type="text" class="form-control" id="InputNombre1" aria-describedby="NombreHelp">
-                <div id="NombreHelp" class="form-text">We'll never share your Nombre with anyone else.</div>
-            </div>
-            <div class="mb-3">
-
-                <select class="form-select" aria-label="Default select">
-                    <option selected>Open this select menu</option>
+                <label for="InputX" class="form-label">Raza y clase</label>
+                <select class="form-select">
                     <option value="1">One - d</option>
                     <option value="2">Two - -</option>
                     <option value="3">Three - -</option>
                 </select>
             </div>
-
+            <div class="mb-3">
+                <label for="InputComentario1" class="form-label">Comentario del avatar</label>
+                <input type="text" class="form-control" id="InputComentario1" aria-describedby="ComentarioHelp">
+                <div id="ComentarioHelp" class="form-text">We'll never share your Comentario with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="InputX" class="form-label">Guild</label>
+                <select class="form-select">
+                    <option value="1">One - d</option>
+                    <option value="2">Two - -</option>
+                    <option value="3">Three - -</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="InputX" class="form-label">Main o Alter</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Main
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Alter
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="InputNombre1" class="form-label">Nombre del avatar</label>
+                <input type="text" class="form-control" id="InputNombre1" aria-describedby="NombreHelp">
+                <div id="NombreHelp" class="form-text">We'll never share your Nombre with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="InputX" class="form-label">Propietario</label>
+                <select class="form-select">
+                    <option value="1">One - d</option>
+                    <option value="2">Two - -</option>
+                    <option value="3">Three - -</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="InputX" class="form-label">Rango en la guild</label>
+                <select class="form-select">
+                    <option value="1">One - d</option>
+                    <option value="2">Two - -</option>
+                    <option value="3">Three - -</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
