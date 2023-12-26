@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WowController;
+use App\Http\Controllers\AvataresController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +30,4 @@ Route::middleware([
 });
 
 Route::get('/wow', [WowController::class, 'index']);
+Route::get('/avatares', [AvataresController::class, 'index']);

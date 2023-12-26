@@ -13,7 +13,8 @@ class AvataresController extends Controller
      */
     public function index()
     {
-        //
+        $avatares = [];
+        return view('wow/avatares', compact(['avatares']));
     }
 
     /**
