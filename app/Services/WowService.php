@@ -34,4 +34,14 @@ class WowService
             ->select('rrcc.id', 'rr.nombre as raza', 'cc.nombre as clase')
             ->get();
     }
+
+    public function getDatos()
+    {
+        return [
+            'avatares' => [],
+            'guilds' => [],
+            'propietarios' => [],
+            'razas_clases' => $this->getRazasClases(),
+        ];
+    }
 }

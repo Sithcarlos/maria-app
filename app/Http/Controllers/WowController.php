@@ -25,12 +25,10 @@ class WowController extends Controller
     return view('wow/main', compact(['users', 'guilds', 'avatares']));
   }
 
-  public function avatares()
+  public function adminAvatares()
   {
-    $razas_clases = $this->WowS->getRazasClases();
-    $avatares = [];
-    return view('wow/avatares', compact(['razas_clases', 'avatares']));
-
+    $datos = $this->WowS->getDatos();
+    return view('wow/avatares', compact('datos'));
   }
 
 

@@ -12,7 +12,7 @@
             <div class="mb-3">
                 <label for="InputX" class="form-label">Raza y clase</label>
                 <select class="form-select">
-                    @forelse ($razas_clases as $rrcc)
+                    @forelse ($datos['razas_clases'] as $rrcc)
                     <option value="{{ $rrcc->id }}">{{ $rrcc->raza }} | {{$rrcc->clase }}</option>
                     @empty
                     <option selected>NO FUNCIONAL</option>
@@ -63,9 +63,12 @@
             <div class="mb-3">
                 <label for="InputX" class="form-label">Rango en la guild</label>
                 <select class="form-select">
-                    <option value="1">One - d</option>
-                    <option value="2">Two - -</option>
-                    <option value="3">Three - -</option>
+                    <option value="Alter">n Alter</option>
+                    <option value="Oficial">2 Oficial</option>
+                    <option value="Raider">n Raider</option>
+                    <option value="Reclutador">n Reclutador</option>
+                    <option value="Soldado">0 Soldado</option>
+                    <option value="Teniente">1 Teniente</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -88,7 +91,7 @@
                 </tr>
             </thead>
             <tbody>
-                @forelse ($avatares as $avatar)
+                @forelse ($datos['avatares'] as $avatar)
                 <tr>
                     <td>{{ $avatar->clase }}</td>
                     <td>{{ $avatar->comentario }}</td>
